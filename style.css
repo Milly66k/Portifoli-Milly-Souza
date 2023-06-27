@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff
+    --color-pink: #d12f7a
+    --color-black: #000000
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#person {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.person-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+}
+
+.person-content div h1 {
+    position: relative;
+    width: fit-content;
+    padding: 0px 4px;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    color: transparent;
+    animation: written_text .5s ease forwards ;
+    animation-delay: .5s;
+}
+.person-content div h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.person-content div h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.person-content div h1:nth-child(3) {
+    animation: written_text_name .5s ease forwards;
+    animation-delay: 3s;
+}
+.person-content div h1 samp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(173, 216, 230);
+    width: 0px;
+    height: 100%;
+    animation: written_text_box 1s ease forwards;
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(1) samp {
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(2) samp {
+    animation-delay: 1.5s;
+}
+
+.person-content div h1:nth-child(3) samp {
+    animation-delay: 2.5s;
+}
+
+.stacks-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes written_text {
+    100% {
+        color: white;
+    } 
+}
+
+@keyframes written_text_name {
+    100% {
+        color: pink;
+    }   
+}
+@keyframes written_text_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+
