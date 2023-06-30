@@ -195,49 +195,78 @@ body {
     height: 300px; */
 
 }
-.links img {
+.links a img {
     width: 30px;
     height: 30px;
+    margin: 10px;
+    filter: brightness(.8);
+    transition: all .3s ease;
+}
+
+.links a img:hover{
+    filter: brightness(1);
+    transform: scale(1.15);
 }
 
 .about {
     height: 100vh;
     width: 100%;
+    background-color: #000;
+
     display: flex;
-    align-items: center;
-    background-color: black;
+    color: white;
 }
- .about .img-left{
-    height: 100%;
+.background-about {
     width: 50%;
-    background-image: url(./imagens/img.2.jpg);
-    background-size: cover;
- }
- .about .right {
     height: 100%;
-    width: 50%;
-    background-color: black;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-size: 25px;
- }
-.right {
-    color: pink;
+    align-items: center;
+}
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.text-01 {
-
+.img-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: 
+    linear-gradient(.25turn, transparent 30%, black),
+    linear-gradient(.5turn, transparent 30%, black),
+    linear-gradient(1turn, transparent 65%, black);
 }
-.text-02 {
 
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
 }
-.text-03 {
 
+.box-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 3rem;
 }
-.text-04 {
 
+.section-subtitle h2 p{
+    display: inline-block;
+    font-size: 3rem;
+}
+.section-subtitle h2 p:nth-child(2) samp{
+    padding: 3px, 5px;
+    border-radius: 4px;
+    color: #000;
+    background-color: white;
 }
 
 @keyframes written_text {
