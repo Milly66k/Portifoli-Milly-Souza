@@ -21,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#person {
+.person {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -198,6 +198,46 @@ body {
 .links img {
     width: 30px;
     height: 30px;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+ .about .img-left{
+    height: 100%;
+    width: 50%;
+    background-image: url(./imagens/img.2.jpg);
+    background-size: cover;
+ }
+ .about .right {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+ }
+.right {
+    color: pink;
+}
+
+.text-01 {
+
+}
+.text-02 {
+
+}
+.text-03 {
+
+}
+.text-04 {
+
 }
 
 @keyframes written_text {
