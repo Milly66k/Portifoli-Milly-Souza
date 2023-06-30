@@ -266,8 +266,22 @@ body {
     padding: 3px, 5px;
     border-radius: 4px;
     color: #000;
-    background-color: white;
+    background-color:  rgb(173, 216, 230);
 }
+
+.box-about h3 {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.box-about h3 p {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #000;
+    background: pink;
+}
+
 
 @keyframes written_text {
     100% {
