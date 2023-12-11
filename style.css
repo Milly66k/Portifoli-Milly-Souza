@@ -29,7 +29,7 @@ body {
     width: 100%;
     padding: 15px 30px;
 
-    background: 'tranparent';
+    background: 'transparent';
     position: fixed;
     z-index: 2;
 }
@@ -394,7 +394,7 @@ inicio do sobre  */
     color: white;
 }
 
-.wrapper-projects {
+/* .wrapper-projects {
     display: flex;
     margin-top: 2rem;
     height: 500px;
@@ -402,10 +402,20 @@ inicio do sobre  */
     justify-content: center;
     flex-direction: row;
     color: white;
-}
+} */
 
-.swiper-wrapper {
-    
+.swiper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+    margin-top: 2rem;
+    height: 500px;
+
+
 }
 
 .card-project{
@@ -439,6 +449,8 @@ inicio do sobre  */
     width: 100%;
     background-color: rgb(255, 120, 255);
     border-radius:  20px 20px 0px 0px;
+
+    z-index: -1;
 }
 
 /* .content-project{
