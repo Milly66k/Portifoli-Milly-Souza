@@ -30,6 +30,8 @@ body {
     padding: 15px 30px;
 
     background: 'transparent';
+    transition: all .3s ease-out;
+
     position: fixed;
     z-index: 2;
 }
@@ -357,7 +359,7 @@ inicio do sobre  */
     margin: 4rem 3rem;
 }
 
-.button-cta button {
+.button-cta a {
     display: inline-block;
     width: 100%;
     max-width: 172px;
@@ -368,9 +370,14 @@ inicio do sobre  */
     letter-spacing: .15rem;
     border-radius: 10px;
     cursor: pointer;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size:  1.3rem;
 }
 
-.button-cta button:hover {
+.button-cta a:hover {
     transition: all .3s ease;
     filter: brightness(.8);
 }
@@ -404,9 +411,20 @@ inicio do sobre  */
     color: white;
 } */
 
+.container-projects {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper {
     height: 100%;
     width: 100%;
+
+    max-width: 1020px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,8 +482,11 @@ inicio do sobre  */
 } */
 
 .image-project{
-    height: 240px;
-    width: 250px;
+    max-height: 240px;
+    max-width: 250px;
+
+    height: 100%;
+    width: 100%;
     
     position: relative;
     object-fit: cover;
